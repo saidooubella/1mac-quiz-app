@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="onPrimaryColor">#000000</color>
+    <color name="onSecondaryColor">#000000</color>
+    <color name="onBackgroundColor">#000000</color>
+
+    <color name="primaryColor">#3ddc85</color>
+    <color name="primaryDarkColor">#00a957</color>
+
+    <color name="secondaryColor">#4286f4</color>
+    <color name="secondaryDarkColor">#005ac1</color>
+
+    <color name="backgroundColor">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Android Quiz</string>
+    <string name="start">Start</string>
+    <string name="description">Are you really knowing Android ? Test your self to check how much you are.</string>
+    <string name="answerFiledHint">Enter your answer…</string>
+    <string name="submit">Submit</string>
+    <string name="home">Home</string>
+    <string name="restart">Restart</string>
+    <string name="questionDisplay">Question %d/%d</string>
+    <string name="no_entered_answer">No answer is entered!</string>
+    <string name="no_checked_answer">No answer is checked!</string>
+    <string name="no_checked_answers">No answers are checked!</string>
+    <string name="winning_message">Congrats, You Win !</string>
+    <string name="loosing_message">Nice try, but unfortunately you didn\'t win !</string>
+    <string name="resultsScreenLabel">Results</string>
+</resources>

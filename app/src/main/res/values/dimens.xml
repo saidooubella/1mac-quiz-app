@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">36sp</dimen>
+    <dimen name="descriptionTextSize">18sp</dimen>
+    <dimen name="screenEdgesSpacing">16dp</dimen>
+    <dimen name="checkBoxLabelSize">16sp</dimen>
+    <dimen name="questionTextSize">30sp</dimen>
+    <dimen name="scoreTextSize">30sp</dimen>
+    <dimen name="gameResultTextSize">20sp</dimen>
+    <dimen name="circularProgressSize">120dp</dimen>
+</resources>

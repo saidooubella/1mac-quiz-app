@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".result.ResultFragment">
+
+        <com.said.oubella.androidquiz.externals.CircleProgressBar
+            android:id="@+id/resultProgress"
+            android:layout_width="@dimen/circularProgressSize"
+            android:layout_height="@dimen/circularProgressSize"
+            app:layout_constraintBottom_toTopOf="@id/resultText"
+            app:layout_constraintEnd_toStartOf="@id/restartButton"
+            app:layout_constraintStart_toStartOf="@id/start"
+            app:layout_constraintTop_toTopOf="@id/top"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:progressBarThickness="4dp"
+            app:progressbarColor="@color/secondaryColor" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/onBackgroundColor"
+            android:textSize="@dimen/scoreTextSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/resultProgress"
+            app:layout_constraintEnd_toEndOf="@+id/resultProgress"
+            app:layout_constraintStart_toStartOf="@+id/resultProgress"
+            app:layout_constraintTop_toTopOf="@+id/resultProgress"
+            tools:text="0/0" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/onBackgroundColor"
+            android:textSize="@dimen/gameResultTextSize"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/bottom"
+            app:layout_constraintEnd_toEndOf="@+id/resultProgress"
+            app:layout_constraintStart_toStartOf="@+id/resultProgress"
+            app:layout_constraintTop_toBottomOf="@id/resultProgress"
+            tools:text="You win!" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            app:layout_constraintBottom_toTopOf="@+id/restartButton"
+            app:layout_constraintEnd_toEndOf="@+id/restartButton"
+            app:layout_constraintStart_toStartOf="@+id/restartButton"
+            app:layout_constraintTop_toTopOf="@id/top"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/restartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/restart"
+            app:layout_constraintBottom_toBottomOf="@id/bottom"
+            app:layout_constraintEnd_toEndOf="@id/end"
+            app:layout_constraintStart_toEndOf="@id/resultProgress"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/bottomGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="restartButton,resultText,homeButton"
+            tools:visibility="gone" />
+
+        <include layout="@layout/screen_edges" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
